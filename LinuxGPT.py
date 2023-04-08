@@ -18,36 +18,36 @@ while True:
     #     prompt=( "You are linuxGPT Your work help me with my pc  Write bash code for this prompt"+'" '+(message)+ '"' +"For system Linux Manjaro kde  prime  Write only  code do not explain how it work do not take any inoformation if  коментарі в коді пиши україньською  and update flutpak or install something from flathub, flatpak, kde ")
     #     print("flatpak mode active ")
     # else:
-    slovo = "flatpak"
+    TriggerWord = "flatpak"
     code="N"
-    slovo4="python"
-    for stroka in message.split(' '):
-        if stroka == slovo4:
+    TriggerWord4="python"
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord4:
             code="PY"
             break
-    slovo1="parameters"
-    for stroka in message.split(' '):
-        if stroka == slovo1:
+    TriggerWord1="parameters"
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord1:
             code="P"
             break
-    slovo2="sudo"
-    for stroka in message.split(' '):
-        if stroka == slovo2:
+    TriggerWord2="sudo"
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord2:
             code="SUDO"
             break
-    slovo3="судо"
-    for stroka in message.split(' '):
-        if stroka == slovo3:
+    TriggerWord3="судо"
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord3:
             code="SUDO"
             break
-    for stroka in message.split(' '):
-        if stroka == slovo:
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord:
             code="F"
             break
-    slovo0 = "флатпак"
+    TriggerWord0 = "флатпак"
 
-    for stroka in message.split(' '):
-        if stroka == slovo0:
+    for StringTechnic in message.split(' '):
+        if StringTechnic == TriggerWord0:
             code="F"
             break
     if code=="N":
